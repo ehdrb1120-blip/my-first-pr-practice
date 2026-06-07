@@ -14,7 +14,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(multiply(4, 3), 12)
         self.assertEqual(multiply(0, 5), 0)
 
-    # NOTE: subtract() 함수에 대한 테스트가 아직 없습니다.
+    def test_subtract(self):
+        self.assertEqual(subtract(5, 2), 3)
+        self.assertEqual(subtract(0, 4), -4)
 
 
 if __name__ == "__main__":
